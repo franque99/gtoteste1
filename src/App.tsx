@@ -1,1 +1,1 @@
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'; import Quiz from './pages/Quiz'; import Train from './pages/Train'; import Study from './pages/Study'; import Ranges from './pages/Ranges'; import NavBar from './components/NavBar'; export default function App() { return (<BrowserRouter><NavBar/><Routes><Route path="/" element={<Quiz />} /><Route path="/train" element={<Train />} /><Route path="/study" element={<Study />} /><Route path="/ranges" element={<Ranges />} /></Routes></BrowserRouter>); }
